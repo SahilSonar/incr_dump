@@ -37,7 +37,7 @@ jobs:
 
     - name: Dump
       run: |
-        mkdir ota1; pushd ota1; curl -s https://api.github.com/repos/djchittoor/nothing_archive/releases/tags/${{ inputs.release_version1}} \
+        mkdir ota1; pushd ota1; curl -s https://api.github.com/repos/SahilSonar/incr_dump/releases/tags/${{ inputs.release_version1}} \
           | grep "browser_download_url" \
           | cut -d : -f 2,3 \
           | tr -d \" \
